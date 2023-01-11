@@ -24,15 +24,14 @@ class Atleta {
     }
 
     calculaMediaValida() {
-        let notasGerais = this.notas;
-        let notasOrganizadas = notasGerais.sort(function comparaNumeros(a, b) {
+        
+        let notasOrdenadas = this.notas.sort(function comparaNumeros(a, b) {
             if (a == b) return 0;
             if (a < b) return -1;
             if (a > b) return 1;
         });
 
-
-        let notasComputadas = notasOrganizadas.slice(1, 4);
+        let notasComputadas = this.notas.slice(1, 4);
 
         let somaNotasComputadas = notasComputadas.reduce(function (total, atual) {
             return total + atual
