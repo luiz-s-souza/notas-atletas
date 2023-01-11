@@ -28,5 +28,7 @@ for (let i = 0; i < atletas.length; i++) {
   atletas[i].notasComputadas.map(function(notas) {
     soma = soma + notas;
   });
-  console.log("Atleta: " + atletas[i].nome + "\nNotas: " + atletas[i].notas + "\nMédia Válida: " + (soma / atletas[i].notasComputadas.length));
+  console.log("Atleta: " + atletas[i].nome)
+  console.log("Notas: " + atletas[i].notas)
+  console.log("Média Válida: " + (soma / atletas[i].notasComputadas.length));
 };
